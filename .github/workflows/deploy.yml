@@ -18,17 +18,19 @@ jobs:
       with:
         node-version: '14'  # Убедитесь, что используется подходящая версия Node.js
 
-    - name: Change dir
+    - name: Navigate to project directory
       run: cd mini-app
 
     - name: Install dependencies
       run: npm install
+      working-directory: ./mini-app
 
     - name: Build project
       run: npm run build  # Замените на вашу команду сборки
+      working-directory: ./mini-app
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Замените на вашу папку со сборкой
+        publish_dir: ./mini-app/dist  # Замените на вашу папку со сборкой
