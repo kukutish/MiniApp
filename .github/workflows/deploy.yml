@@ -18,6 +18,9 @@ jobs:
       with:
         node-version: '14'  # Убедитесь, что используется подходящая версия Node.js
 
+    - name: Change dir
+      run: cd mini-app
+
     - name: Install dependencies
       run: npm install
 
