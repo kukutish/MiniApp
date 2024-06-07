@@ -49,7 +49,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
     <IonApp>
-      <BrowserRouter>
+      <HashRouter>
         <IonTabs>
           <IonRouterOutlet>
             <Route exact path="/tab1">
@@ -80,7 +80,7 @@ const App: React.FC = () => (
             </IonTabButton>
           </IonTabBar>
         </IonTabs>
-      </BrowserRouter>
+      </HashRouter>
     </IonApp>
 );
 
