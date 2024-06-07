@@ -6,13 +6,13 @@
   "homepage": "https://kukutish.github.io/MiniApp/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && shx cp build/index.html build/404.html",
+    "build": "tsc && vite build && shx cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
     "lint": "eslint",
     "predeploy": "rm -rf build && npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@capacitor/app": "6.0.0",
