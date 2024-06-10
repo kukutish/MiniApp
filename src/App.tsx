@@ -49,7 +49,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
     <IonApp>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename='/MiniApp'>
         <IonTabs>
           <IonRouterOutlet>
             <Route exact path="/tab1">
