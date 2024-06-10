@@ -48,9 +48,9 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => (
-    <IonPage>
       <IonApp>
-        <IonReactRouter>
+        <BrowserRouter basename='/MiniApp'>
+          <IonReactRouter>
           <IonTabs>
             <IonRouterOutlet>
               <Route exact path="/tab1">
@@ -82,8 +82,8 @@ const App: React.FC = () => (
             </IonTabBar>
           </IonTabs>
         </IonReactRouter>
+        </BrowserRouter>
       </IonApp>
-    </IonPage>
 );
 
 export default App;
